@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #faf9f6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 7%;
+  background: #faf9f6;
+}
+
+.logo {
+  color: #222;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.logo span {
+  color: #b46f50;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #b46f50;
+}
+
+.hero {
+  min-height: 470px;
+  margin: 10px 3%;
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(110deg, #e9e1d5, #f5eee6);
+}
+
+.eyebrow {
+  color: #a76b4e;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1.05;
+  margin: 20px 0;
+  letter-spacing: -4px;
+}
+
+.hero-content > p:not(.eyebrow) {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 16px 24px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.main-btn:hover {
+  background: #a76b4e;
+}
+
+.featured {
+  padding: 70px 7%;
+}
+
+.featured h2 {
+  font-size: 38px;
+  margin: 12px 0 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  color: #222;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.feature-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.feature-card:hover img {
+  transform: scale(1.03);
+}
+
+.feature-card h3 {
+  margin-top: 16px;
+  font-size: 17px;
+}
+
+footer {
+  text-align: center;
+  padding: 45px 20px;
+  background: #222;
+  color: white;
+  line-height: 2;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 20px 5%;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 380px;
+    padding: 40px 7%;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

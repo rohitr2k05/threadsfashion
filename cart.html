@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | THREADS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">THREADS<span>.</span></a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </nav>
+
+  <main class="featured">
+    <p class="eyebrow">YOUR SELECTION</p>
+    <h1 class="text-4xl font-bold my-4">Your shopping bag.</h1>
+
+    <div id="cart-items" class="mt-8 space-y-5"></div>
+
+    <div class="border-t mt-8 pt-6">
+      <h2 class="text-2xl font-bold">
+        Total: <span id="cart-total">₹0</span>
+      </h2>
+
+      <div class="flex gap-4 mt-6 flex-wrap">
+        <a href="shop.html" class="main-btn">CONTINUE SHOPPING</a>
+        <button id="checkout-btn" class="main-btn">
+          CHECKOUT
+        </button>
+      </div>
+
+      <p id="cart-message" class="mt-5"></p>
+    </div>
+  </main>
+
+  <footer>
+    <h2>THREADS.</h2>
+    <p>Less noise. More style.</p>
+    <p>© 2026 THREADS Fashion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

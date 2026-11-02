@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | THREADS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">THREADS<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </nav>
+
+  <main class="featured">
+    <p class="eyebrow">THE COLLECTION</p>
+    <h1 class="text-4xl font-bold my-4">Shop all styles.</h1>
+    <p class="text-gray-500 mb-8">Find your everyday favourites.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="https://placehold.co/500x600/e9e1d5/333333?text=Classic+Tee" alt="Classic T-shirt">
+        <h3>Classic T-Shirt</h3>
+        <p class="my-2">₹599</p>
+        <button class="main-btn" onclick="addToCart('Classic T-Shirt', 599)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://placehold.co/500x600/d7d7d2/333333?text=Casual+Shirt" alt="Casual shirt">
+        <h3>Casual Shirt</h3>
+        <p class="my-2">₹999</p>
+        <button class="main-btn" onclick="addToCart('Casual Shirt', 999)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://placehold.co/500x600/e6d6cd/333333?text=Streetwear" alt="Streetwear">
+        <h3>Streetwear Hoodie</h3>
+        <p class="my-2">₹1,499</p>
+        <button class="main-btn" onclick="addToCart('Streetwear Hoodie', 1499)">
+          ADD TO CART
+        </button>
+      </div>
+    </div>
+
+    <p id="message" class="mt-6 text-green-700"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
